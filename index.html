@@ -4,7 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@600&display=swap');
+      body {
+      width: 1200px;
+      margin: 0 auto;
+        font-family: 'PT Serif', serif;
+        color: #000000cc;
+        font-weight: 400;
+        line-height: 1.58;
+        letter-spacing: -.003em;
+        font-size: 20px;
+        padding: 70px;
+      }
+      h1 {
+          font-family: 'Cormorant', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 38px;
+        line-height: 1.15;
+        letter-spacing: -.02em;
+        color: rgb(255, 255, 255);
+        -webkit-font-smoothing: antialiased;
+      }
+      h2, h3, h4, h5, h6{
+          font-family: 'Cormorant', sans-serif;
+          font-weight: 700;
+          font-style: normal;
+          font-size: 38px;
+          line-height: 1.15;
+          letter-spacing: -.02em;
+          color: #000000;
+          -webkit-font-smoothing: antialiased;
+        }
+      button {
+          background-color: #ffffff;
+          border: 2px solid black;
+          border-radius: 5px;
+          padding: 5px 10px;
+          font-family: 'Cormorant', sans-serif;
+          font-weight: 700;
+          font-size: 13px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          text-align: center;
+          display: inline-block;
+          font size: 10px;
+      }</style>
   </head>
   <body>
     <header id="top">
@@ -19,13 +67,36 @@
           <li>The body element represents the visible content shown to the user.</li>
           <li>ul is for unordered lists</li>
           <li>ol is for ordered lists</li>
+          <li>Website for Colour Codes: <button><a title="HTML Color Codes Website" a href="https://htmlcolorcodes.com/">View</a></button></li>
+          <li>To add alt text to a link you can add a title= before href </li>
+          <li>To change a font, you can put font color=#</li>
+          <li>antialiased only works on Mac (font smoothing)</li>
         </ul>
       </section>
    
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>Enter your CSS notes here</li>
+          <li>A margin indicates how much space we want around the outside of an element.</li>
+          <li>A padding indicates how much space we want around the content inside an element.</li>
+          <li><u>There are three ways to style</u>:
+            <ol>inline CSS</ol>
+            <ol>Internal CSS style sheet</ol>
+            <ol>External CSS style sheet</ol>
+          <li>Put external CSS style sheet in the header, after meta but before title.</li>
+          <li>* Beside something in CSS will make all elements of the same thing follow that rule: <br>[Did that with the paragraph section to get links to be the same size as the rest of the text. Chose to not go further into styling as I'm still going through the lesson and it may ask to do link styling later. May change afterwards depending on how the lesson goes]</li>
+          <li><u>BOX MODEL ORDER</u>:
+            <ol>1) Width</ol>
+            <ol>2) Padding</ol>
+            <ol>3) Margin</ol>
+            <ol>4) Border</ol>
+            <p>Also, values go from top, right, bottom, left - clockwise</p></ol>
+          <li><u>Text Decoration Types</u>:
+            <ol>underline; | for solid line</ol>
+            <ol>underline dotted optionalcolorhere | for dotted with or without color / use ; afterwards on color, not if it doesn't</ol>
+            <ol>colorhere wavyunderline; | for a solid colored wavy underline</ol>
+            <ol>underline overline #colorhere; | for solid line over and under text with HEXcolor</li></ol>
+          </li>
         </ul>
       </section>
    
@@ -34,22 +105,19 @@
         <ul>
        <li>git status: checks what branch we are currently on</li>
        <li>git checkout -b branch-name: creates a new branch and switches to it</li>
-       <li>Don't delete .DS_Store as its for indexing.
-            <br><b>FIX</b>: When getting this error:
-            <br>On branch feature/starter-code
-            <br>Changes not staged for commit:
-            <br> (use "git add <file>..." to update what will be committed)
-            <br>(use "git restore <file>..." to discard changes in working directory)
-            <br> modified:   .DS_Store</file></file></li>
-            
-            no changes added to commit (use "git add" and/or "git commit -a")
-          <br>
+       <li>Don't delete .DS_Store as its for indexing. This error arises:
+            <ol>On branch feature/starter-code</ol>
+            <ol>Changes not staged for commit:
+            <ol>(use "git add <file>..." to update what will be committed)</file></ol>
+            <ol>(use "git restore <file>..." to discard changes in working directory)</ol>
+            <ol><font color="#900C3F">modified:   .DS_Store</font></file></file></ol>
+          no changes added to commit (use "git add" and/or "git commit -a")</ol>
+          <br><u>FIX FOR THIS ERROR</u>
           <br>There are three options to fix it:
           <ol>Commit change: git commit -m "message"</ol>
           <ol>Stash change: git stash or do merge & then stash: git stash pop</ol>
           <ol>Discard local changes: git reset --hard or git checkout -t -f remote/branch</ol>
-          <p>Source: <a href="https://stackoverflow.com/questions/15745045/how-do-i-resolve-git-saying-commit-your-changes-or-stash-them-before-you-can-me">How to Resolve "Commit your changes or stash before merge"</a></li>
-       <li>Next note goes here</li>
+          <p>Source: How to Resolve "Commit your changes or stash before merge": <button><a title="How to Commit your Changes or Stash Before Merge Error" a href="https://stackoverflow.com/questions/15745045/how-do-i-resolve-git-saying-commit-your-changes-or-stash-them-before-you-can-me">View</a></button></li>
       </section>
    
       <section class="card" id="javascript-section">
