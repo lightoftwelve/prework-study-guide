@@ -114,28 +114,35 @@
    
       <section class="card" id="git-section">
         <h2>Git</h2>
-        <ul>
+        <br><h3>Git Quick Notes</h3></li>
+        <ul><ul>
        <li>git status: checks what branch we are currently on</li>
-       <li>git checkout -b branch-name: creates a new branch and switches to it</li>
-       <li>Don't delete .DS_Store as its for indexing. This error arises:
-            <ol>On branch feature/starter-code</ol>
-            <ol>Changes not staged for commit:
-            <ol>(use "git add <file>..." to update what will be committed)</file></ol>
-            <ol>(use "git restore <file>..." to discard changes in working directory)</ol>
-            <ol><font color="#900C3F">modified:   .DS_Store</font></file></file></ol>
-          no changes added to commit (use "git add" and/or "git commit -a")</ol>
-          <br><u>FIX FOR THIS ERROR</u>
+       <li>git checkout -b branch-name: creates a new branch and switches to it</li></ul>
+       
+       <br></ul><h3>Troubleshooting</h3></ul></li>
+          <ul><u>THE TROUBLE</u><ul>
+          Don't delete .DS_Store as its for indexing. This error arises:
+          <ol>On branch feature/starter-code</ol>
+          <ol>Changes not staged for commit:
+          <ol>(use "git add <file>..." to update what will be committed)</file></ol>
+          <ol>(use "git restore <file>..." to discard changes in working directory)</ol>
+          <ol><font color="#900C3F">modified:   .DS_Store</font></file></file></ol>
+          </ol>no changes added to commit (use "git add" and/or "git commit -a")</ol></ul>
+          <u>FIX FOR THIS ERROR</u>
           <br>There are three options to fix it:
           <ol>Commit change: git commit -m "message"</ol>
           <ol>Stash change: git stash or do merge & then stash: git stash pop</ol>
           <ol>Discard local changes: git reset --hard or git checkout -t -f remote/branch</ol>
-          <p>Source: How to Resolve "Commit your changes or stash before merge": <button><a title="How to Commit your Changes or Stash Before Merge Error" a href="https://stackoverflow.com/questions/15745045/how-do-i-resolve-git-saying-commit-your-changes-or-stash-them-before-you-can-me">View</a></button></li>
+          <p>Source: How to Resolve "Commit your changes or stash before merge": <button><a title="How to Commit your Changes or Stash Before Merge Error" a href="https://stackoverflow.com/questions/15745045/how-do-i-resolve-git-saying-commit-your-changes-or-stash-them-before-you-can-me">View</a></button></li></ul>
+            <br><h3>Quick Links</h3></li>
+            <ol><ol><li><a title="Professional README Guide | Request-Response Full Stack Blog" a href="https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide">Guide to Making a Professional README Guide</a></li></ol></ol>
+          
       </section>
    
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
-        <br><ul><h3>JavaScript Quick Notes</h3></li>
-          <li>A variable is a named container that allows us to store data in our code.</li>
+        <br></ul><h3>JavaScript Quick Notes</h3></li>
+          <ul><ul><li>A variable is a named container that allows us to store data in our code.</li>
           <li>Control flow is the order in which a computer executes code in a script.</li>
           <li>Falsy Values:
             <ol>0</ol>
@@ -146,10 +153,10 @@
             <ol>undefined</ol>
             <ol>NaN</ol>
             <ol>False</ol>
-            <p>Everything else is truthy</p>
+            <p>Everything else is truthy</p></li></ul>
             
-          <br><h3>JavaScript Basics</h3></li>
-            <ol><li><u>Introduction to JavaScript</u>: JavaScript is a versatile, powerful, fast programming language. It is natively implemented in all modern web browsers, eliminating the need for additional plugins. The primary use of JavaScript is to add interactivity and dynamically update content on web pages.
+          <br></ul><h3>JavaScript Basics</h3></li>
+          </ul><ol><ol><li><u>Introduction to JavaScript</u>: JavaScript is a versatile, powerful, fast programming language. It is natively implemented in all modern web browsers, eliminating the need for additional plugins. The primary use of JavaScript is to add interactivity and dynamically update content on web pages.
             <li><u>Variables</u>: Variables in JavaScript act as containers to hold data values. Declaration can be made using the following keywords: 'var', 'let', or 'const'. For example, let myVariable = 'Bob'; declares a variable named 'myVariable' and assigns it the string value 'Bob'.
             <li><u>Data Types</u>: JavaScript supports various data types, including Number, String, Boolean, Object, Null, and Undefined. These data types allow for storing and manipulating different kinds of information within a JavaScript program.
             <li><u>Operators</u>: Operators in JavaScript perform operations on values. These include arithmetic operators (+, -, *, /, %) for calculations, assignment operators (=) to assign values to variables, and comparison operators (==, ===, !=, !==, <, >, <=, >=) to compare values.
@@ -162,7 +169,7 @@
             
           <br><h3>JavaScript Data Structures</h3></li>
             <ol start="1">
-            <li><u>Dynamic Typing</u>: JavaScript is a language with dynamic typing, allowing you to declare variables without specifying their data type. Also, data types can change within the lifetime of a variable.
+            </ul><ol><li><u>Dynamic Typing</u>: JavaScript is a language with dynamic typing, allowing you to declare variables without specifying their data type. Also, data types can change within the lifetime of a variable.
             <li><u>Primitive Values</u>: There are seven data types in JavaScript that are considered primitive, which means they are not objects and have no methods. They are undefined, null, boolean, string, symbol, number, and bigint. All primitives are immutable, i.e., they cannot be altered. 
             <ol><u>Undefined</u>: When a variable hasn't been assigned a value, it is considered undefined.</ol>
             <ol><u>Null</u>: This special keyword denotes a null or "empty" value.</ol>
@@ -178,15 +185,18 @@
             <li><u>Typed Arrays and ArrayBuffers</u>: JavaScript-typed arrays are objects similar to arrays that enable manipulation of raw binary data stored in memory. ArrayBuffer objects are used to represent a generic, fixed-length raw binary data buffer.
             <li><u>Map and Set</u>: JavaScript's Map and Set objects are collections that allow the storage and retrieval of data. A Map is a collection of keyed data items, just like an Object, but offers more memory-efficient and fast key lookups. A Set is a collection of unique values.
             <li><u>WeakMap and WeakSet</u>: These data structures are similar to Map and Set, but they do not prevent their elements from being garbage-collected. This feature becomes valuable in scenarios where you do not have control over the lifetime of the object.</li></ol>
-          <br><h3>Understanding the Basics of JavaScript Links:</h3></li> 
+          
+          </ol><br><h3>Understanding the Basics of JavaScript Links:</h3></li></ol> 
             <ol start="1">
             <ol><li><a title="JavaScript Basics - Mozilla Developer Network (MDN)" a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">JavaScript Basics - Mozilla Developer Network (MDN)</a></li>
             <li><a title="JavaScript Data Structures - MDN" a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures">JavaScript Data Structures - MDN</a></li>
             <li><a title="Your Guide to Semicolons in JavaScript - Codecademy" a href="https://www.codecademy.com/resources/blog/your-guide-to-semicolons-in-javascript/">Your Guide to Semicolons in JavaScript - Codecademy</a></li>
             <li><a title="JavaScript Grammar and Types (specifically Variables) - MDN" a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#variables">JavaScript Grammar and Types (specifically Variables) - MDN</a></li>
             <li><a title="Console.log() Method - MDN" a href="https://developer.mozilla.org/en-US/docs/Web/API/console/log">Console.log() Method - MDN</a></li></ol></ol>
+          
           <br><h3>Client Side Scripting Link:</h3></li>
             <ol><ol><li><a title="JavaScript Guide - MDN" a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript">JavaScript Guide - MDN</a></li></ol></ol>
+         
           <br><h3>Variables Checker:</h3></li>
             <ol><ol><li><a title="JavaScript Variables Checker - Mothereff.in" a href="https://mothereff.in/js-variables">JavaScript Variables Checker - Mothereff.in</a></li>
       </section>
