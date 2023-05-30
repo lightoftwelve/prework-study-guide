@@ -22,9 +22,13 @@ To activate the unique study suggestion feature, open Chrome DevTools. For macOS
 
 This dynamic approach to studying helps break the monotony of studying and ensures a well-rounded understanding of all subjects.
 
-## Credits
+## Live Demo
+The live version of the project can be found [here](https://lightoftwelve.github.io/prework-study-guide/).
 
-This project was independently developed.
+## Author
+- Victoria Alawi
+  - GitHub: [@lightoftwelve](https://github.com/lightoftwelve)
+  - Website: [lightoftwelve.com](http://www.lightoftwelve.com)
 
 ## License
 
